@@ -2,15 +2,7 @@ import React, { useState } from 'react';
 
 export default function App() {
 	const questions = [
-		{
-			questionText: 'What is the capital of France?',
-			answerOptions: [
-				{ answerText: 'New York', isCorrect: false },
-				{ answerText: 'London', isCorrect: false },
-				{ answerText: 'Paris', isCorrect: true },
-				{ answerText: 'Dublin', isCorrect: false },
-			],
-		},
+	
 		{
 			questionText: 'Who is CEO of Tesla?',
 			answerOptions: [
@@ -20,6 +12,51 @@ export default function App() {
 				{ answerText: 'Tony Stark', isCorrect: false },
 			],
 		},
+		
+		{
+			questionText: 'How many Harry Potter books are there?',
+			answerOptions: [
+				{ answerText: '1', isCorrect: false },
+				{ answerText: '4', isCorrect: false },
+				{ answerText: '6', isCorrect: false },
+				{ answerText: '7', isCorrect: true },
+			],
+		},
+
+		{
+			questionText: 'Who was the main actor in the movie Iron man?',
+			answerOptions: [
+				{ answerText: 'Stan lee', isCorrect: false },
+				{ answerText: 'Robert Downey jr.', isCorrect: true },
+				{ answerText: 'Bill Smitrovich', isCorrect: false },
+				{ answerText: 'Mickey Rouke', isCorrect: false },
+			],
+		},{
+			questionText: 'What is the capital of Canada',
+			answerOptions: [
+				{ answerText: 'Ottawa ', isCorrect: true },
+				{ answerText: 'Toronto', isCorrect: false },
+				{ answerText: 'Vancouver', isCorrect: false },
+				{ answerText: 'Montreal', isCorrect: false },
+			],
+		},{
+			questionText: 'How many bones are there in the human body?',
+			answerOptions: [
+				{ answerText: '200', isCorrect: false },
+				{ answerText: '206', isCorrect: true },
+				{ answerText: '201', isCorrect: false },
+				{ answerText: '209', isCorrect: false},
+			],
+		},{
+			questionText: 'Fe is a chemical symbol for ?',
+			answerOptions: [
+				{ answerText: 'Zinc', isCorrect: false },
+				{ answerText: 'Hydrogen', isCorrect: false },
+				{ answerText: 'Iron', isCorrect: true },
+				{ answerText: 'Fluorine', isCorrect:false },
+			],
+		},
+		
 		{
 			questionText: 'The iPhone was created by which company?',
 			answerOptions: [
@@ -29,13 +66,43 @@ export default function App() {
 				{ answerText: 'Microsoft', isCorrect: false },
 			],
 		},
+		
 		{
-			questionText: 'How many Harry Potter books are there?',
+			questionText: 'How many blue strips are there on the US flag?',
 			answerOptions: [
-				{ answerText: '1', isCorrect: false },
-				{ answerText: '4', isCorrect: false },
 				{ answerText: '6', isCorrect: false },
-				{ answerText: '7', isCorrect: true },
+				{ answerText: '13', isCorrect: true },
+				{ answerText: '7', isCorrect: false },
+				{ answerText: '4', isCorrect: false },
+			],
+		},
+
+		{
+			questionText: 'Who was the only U.S Presidnet to resign?',
+			answerOptions: [
+				{ answerText: 'Richard Nixon', isCorrect:true},
+				{ answerText: 'Herbert Hoover ', isCorrect: false },
+				{ answerText: 'Abraham Lincon', isCorrect: false },
+				{ answerText: 'George W. Bush', isCorrect: false },
+			],
+		},
+		{
+			questionText: 'What is the capital of France?',
+			answerOptions: [
+				{ answerText: 'New York', isCorrect: false },
+				{ answerText: 'London', isCorrect: false },
+				{ answerText: 'Paris', isCorrect: true },
+				{ answerText: 'Dublin', isCorrect: false },
+			],
+		},
+		
+		{
+			questionText: 'Which of these Characters is not part of the Friends group',
+			answerOptions: [
+				{ answerText: 'Racheal', isCorrect: false },
+				{ answerText: 'Joey', isCorrect: false },
+				{ answerText: 'Brittany', isCorrect: true },
+				{ answerText: 'Monica', isCorrect: false },
 			],
 		},
 	];
@@ -61,8 +128,12 @@ export default function App() {
 			{showScore ? (
 				<div className='score-section'>
 					You scored {score} out of {questions.length}
+					<p className='Copy' >©Tobias/.......    </p>
+				<a href='https://github.com/Oluwatobiloba2905/Random-quiz-generator'>	<p className='Repo'>Github</p></a>
 				</div>
-			) : (
+			)
+			
+			: (
 				<>
 					<div className='question-section'>
 						<div className='question-count'>

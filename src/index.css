@@ -12,16 +12,15 @@ body {
 }
 
 body {
-  background-color: black;
+  background-color: #7cc6fe;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  color: white;
 }
 
 .app {
-  background-color: #686060;
+  background-color: #252d4a;
   width: 450px;
   min-height: 200px;
   height: min-content;
@@ -38,7 +37,7 @@ body {
   align-items: center;
 }
 
-
+/* QUESTION/TIMER/LEFT SECTION */
 .question-section {
   width: 100%;
   position: relative;
@@ -66,7 +65,7 @@ body {
   text-align: center;
 }
 
-
+/* ANSWERS/RIGHT SECTION */
 .answer-section {
   width: 100%;
   display: flex;
@@ -78,7 +77,7 @@ button {
   width: 100%;
   font-size: 16px;
   color: #ffffff;
-  background-color: rgb(13, 32, 95);
+  background-color: #252d4a;
   border-radius: 15px;
   display: flex;
   padding: 5px;
